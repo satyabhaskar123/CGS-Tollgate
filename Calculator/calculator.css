@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(118, 0, 0);
+}
+.calculator {
+    width: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #050303;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+.btn {
+    margin: 7px;
+}
