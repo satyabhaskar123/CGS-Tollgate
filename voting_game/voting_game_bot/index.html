@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Game</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">Election Game</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                          <img src="./assets/images/tdp.png" alt="tdp" class="" width="">
+                        </div>
+                        <h5 class="card-title">TDP</h5>
+                        <p class="card-text">Votes: <span id="tdp-votes">0</span></p>
+                        <button class="btn btn-primary vote-button" id="vote-tdp"><audio src="./assets/audios/tdp (mp3cut.net).mp3"></audio>Vote for TDP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                            <img src="./assets/images/ysrcp.jpeg" alt="" width="" >
+                            
+                        </div>
+                        <h5 class="card-title">YSRCP</h5>
+                        <p class="card-text">Votes: <span id="ysrcp-votes">0</span></p>
+                        <button class="btn btn-primary vote-button" id="vote-ysrcp">Vote for YSRCP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                            <img src="./assets/images/psp_logo.jpeg" alt="" width="" >
+                            
+                        </div>
+                        <h5 class="card-title">Praja Shanti Party</h5>
+                        <p class="card-text">Votes: <span id="psp-votes">0</span></p>
+                        <button class="btn btn-primary vote-button" id="vote-psp">Vote for PSP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                            <img src="./assets/images/janasena.png" alt="" width="" >
+                            
+                        </div>
+                        <h5 class="card-title">Janasena</h5>
+                        <p class="card-text">Votes: <span id="janasena-votes">0</span></p>
+                        <button class="btn btn-primary vote-button" id="vote-janasena">Vote for Janasena</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-success" id="finish-voting">Finish Voting</button>
+            <div id="winner"></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+
