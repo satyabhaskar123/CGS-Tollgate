@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "password123",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "user",
+      "isAdmin": false,
+      "profile": {
+        "age": 30,
+        "occupation": "Nurse",
+        "department": "Emergency",
+        "experience": "5 years"
+      }
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "password": "password456",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "user",
+      "isAdmin": false,
+      "profile": {
+        "age": 28,
+        "occupation": "Doctor",
+        "department": "Pediatrics",
+        "experience": "7 years"
+      }
+    },
+    {
+      "id": 3,
+      "username": "admin_user",
+      "password": "Satyabhaskar@123",
+      "name": "Munasa Satya Bhaskar",
+      "email": "satyabhaskar2021@gmail.com",
+      "role": "admin",
+      "isAdmin": true,
+      "profile": {
+        "age": 40,
+        "occupation": "Hospital Administrator",
+        "department": "Management",
+        "experience": "15 years"
+      }
+    }
+  ]
+}
