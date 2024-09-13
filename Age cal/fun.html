@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator with Dynamic Colors</title>
+    <link rel="stylesheet" href="fun.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <label for="birthYear">Year of Birth:</label>
+        <input type="number" id="birthYear" placeholder="YYYY"><br><br>
+
+        <label for="birthMonth">Month of Birth:</label>
+        <input type="number" id="birthMonth" placeholder="MM"><br><br>
+
+        <label for="birthDate">Date of Birth:</label>
+        <input type="number" id="birthDate" placeholder="DD"><br><br>
+
+        <button onclick="calculateAge()">Calculate Age</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="fun.js"></script>
+</body>
+</html>
