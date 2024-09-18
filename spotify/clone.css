@@ -1,0 +1,102 @@
+/* clone.css */
+
+/* Body styling */
+body {
+  background-color: #50bac0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Light background for the container */
+  border-radius: 15px; /* Rounded corners for the container */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+}
+
+/* Header styling */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1db954; /* Spotify-like green */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Input group styling */
+.input-group {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff; /* White background for the input group */
+}
+
+/* Search button */
+#searchButton {
+  background-color: #1db954;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Song card styles */
+.song-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for shadow */
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Song info padding */
+.song-info {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+/* Audio player inside the card */
+.song-card audio {
+  width: 100%;
+  border-radius: 0 0 12px 12px; /* Keep the rounded corners inside the card */
+  margin-top: 10px;
+  outline: none;
+  background-color: #40738c; /* Subtle background color for the audio player */
+}
+
+/* Play button styling */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px; /* Slightly larger button */
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for scaling */
+}
+
+.play-button:hover {
+  background-color: #14833b;
+  transform: translate(-50%, -50%) scale(1.1); /* Slightly increase button size on hover */
+}
+
+#results {
+  margin-top: 20px;
+}
