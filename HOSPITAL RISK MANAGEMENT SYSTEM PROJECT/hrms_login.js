@@ -1,7 +1,7 @@
-fetch('login_page.json') // Fetch from login_page.json
-  .then(response => response.json()) // Parse the JSON data from the response
+fetch('login_page.json')
+  .then(response => response.json())
   .then(data => {
-    // Access the users from the JSON file
+    
     const users = data.users;
 
     document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -11,14 +11,12 @@ fetch('login_page.json') // Fetch from login_page.json
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
-        // Validate user login
         const user = users.find(u => u.email === email && u.password === password);
 
         if (user) {
             const successToast = new bootstrap.Toast(document.getElementById('successToast'));
             successToast.show();
 
-            // Redirect or Display Profile based on role
             setTimeout(function() {
                 if (user.role === 'admin') {
                     window.location.href = 'hrms.html'; 
@@ -29,7 +27,6 @@ fetch('login_page.json') // Fetch from login_page.json
                 } else if (user.role === 'User') {
                     window.location.href = 'user_dash2.html'; 
                 } else {
-                    // Handle unknown roles or cases
                     const errorToast = new bootstrap.Toast(document.getElementById('errorToast'));
                     errorToast.show();
                 }
@@ -40,9 +37,8 @@ fetch('login_page.json') // Fetch from login_page.json
         }
     });
 
-    // Function to display user profile
     function displayUserProfile(user) {
-        const profileContainer = document.createElement('div'); // Corrected to create a 'div'
+        const profileContainer = document.createElement('div');
         profileContainer.innerHTML = `
             <h2>Welcome, ${user.name}</h2>
             <p>Age: ${user.profile.age}</p>
