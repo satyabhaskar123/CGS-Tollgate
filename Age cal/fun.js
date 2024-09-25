@@ -20,13 +20,13 @@ function calculateAge() {
 
   let body = document.body;
   if (age < 13) {
-      body.className = "bg-child";  // Child
+      body.className = "bg-child"; 
   } else if (age >= 13 && age < 20) {
-      body.className = "bg-teen";   // Teen
+      body.className = "bg-teen";  
   } else if (age >= 20 && age < 60) {
-      body.className = "bg-adult";  // Adult
+      body.className = "bg-adult";  
   } else {
-      body.className = "bg-senior"; // Senior
+      body.className = "bg-senior";
   }
 
   document.getElementById('result').textContent = resultText;
