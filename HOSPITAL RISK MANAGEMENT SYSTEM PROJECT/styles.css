@@ -1,4 +1,4 @@
-/* Reset some basic elements */
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -77,66 +77,62 @@ footer {
     width: 100%;
     bottom: 0;
 }
-/* Ensure the container has relative positioning to help with absolute positioning of logo and profile pic */
 .container {
     position: relative;
     width: 100%;
 }
 
-/* Style the logo */
 .logo img {
-    height: 50px; /* Adjust size as needed */
+    height: 50px; 
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-/* Style the profile picture */
 .profile-pic img {
-    height: 50px; /* Adjust size as needed */
+    height: 50px;
     position: absolute;
     top: 10px;
     right: 10px;
-    border-radius: 50%; /* Make it a circle */
+    border-radius: 50%; 
 }
 
-/* Adjust header content to avoid overlapping */
+
 header h1 {
     text-align: center;
     margin: 0;
 }
-/* Style the Profile dropdown */
 .navbar .dropdown-toggle {
-    color: #fff; /* White text */
-    background-color: transparent; /* Transparent background */
+    color: #fff;
+    background-color: transparent; 
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .navbar .dropdown-toggle:hover {
-    background-color: #444; /* Darken the background on hover */
+    background-color: #444; 
 }
 
 .dropdown-menu {
-    background-color: #333; /* Dark background for the dropdown */
+    background-color: #333;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .dropdown-menu .dropdown-item {
-    color: #fff; /* White text for items */
+    color: #fff;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: #555; 
 }
 
 .dropdown-menu .dropdown-item:focus {
-    background-color: #777; /* Focus effect */
+    background-color: #777; 
     outline: none;
 }
 
