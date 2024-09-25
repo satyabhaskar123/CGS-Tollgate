@@ -1,4 +1,3 @@
-/* General Body Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #89f7fe, #66a6ff);
@@ -13,19 +12,19 @@ body {
   background-size: cover;
 }
 
-/* Main Container Styling */
+
 .container {
   background: rgba(10, 7, 7, 0.9);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 400px; /* Ensures it's responsive */
+  max-width: 400px;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -71,7 +70,6 @@ input:focus, select:focus {
   outline: none;
 }
 
-/* Button Styling */
 button {
   background-color: #3bc22c;
   color: white;
